@@ -1,0 +1,123 @@
+body{
+	font-size: 1em;
+	color: #ffffff;
+	background-color:#607D8B;
+	font-family: Roboto;
+}
+
+ul.todoList, ul.completedList{
+	margin: 0 auto;
+	width: 500px;
+	position: relative;
+}
+
+ul.todoList li, ul.completedList li{
+	background-color: #ffffff;
+	border: 0px;
+	list-style: none;
+	margin: 6px;
+	padding: 6px 9px;
+	position: relative;
+	cursor: n-resize;
+}
+
+.todo .text, .completed .text{
+	color: #000000;
+	font-size:1em;
+}
+
+.todo .actions, .completed .actions{
+	position: absolute;
+	right: 7px;
+	top: 6px;
+}
+
+.todo .actions a, .completed .actions a{
+	display: block;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	float: left;
+	text-indent: -9999px;
+	margin: 3px;
+}
+
+
+.actions a.delete{
+	background:url("img/delete.png") no-repeat center center;
+}
+
+.todo .actions a.edit{
+	background:url("img/edit.png") no-repeat center center;
+}
+
+.todo .actions a.complete {
+	background:url("img/checkmark.png") no-repeat center center;
+}
+
+.completed .actions a.undo {
+	background:url("img/undo.png") no-repeat center center;
+}
+
+.todo input{
+	border:0px solid #90A4AE;
+	color:#666666;
+	font-family: 'Roboto-Light';
+	font-size: 0.9em;
+	padding:3px 4px;
+	width:300px;
+}
+
+.edit{
+	display: inline;
+	padding-left: 9px;
+}
+
+a.save{
+	display: block;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+	float: right;
+	margin: 3px;
+	padding-right: 130px;
+	background:url("img/save.png") no-repeat center center;
+}
+
+.ui-button,.ui-dialog-titlebar{
+	font-size:1em !important;
+}
+
+#addButton{
+	background-color: #455A64;
+	margin:50px auto;
+	text-align: center;
+	padding: 5px;
+	width: 50px;
+}
+
+a.addbutton,
+a.addbutton:visited{
+	color: #ffffff;
+	display: block;
+	font-size: 1em;
+	text-decoration: none;
+}
+
+#main{
+	position: relative;
+	margin: 0 auto;
+	width: 960px;
+}
+
+h1{
+	padding: 30px 0;
+	font-family: Roboto;
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 2em;
+}
+
+a img{
+	border:none;
+}
